@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "hololive clip video web site",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/huketo/HoloClipy.git"
@@ -16,7 +13,7 @@
     "es6"
   ],
   "author": "huketo",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/huketo/HoloClipy/issues"
   },
