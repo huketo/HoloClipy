@@ -2,6 +2,18 @@ html(lang="ko")
   head
     title #{pageTitle} | HoloCilpy
     link(rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css")
-  body 
-    block content
+  body
+    header 
+      if fakeUser.loggedIn 
+        small Hello #{fakeUser.username}
+      nav 
+        ul 
+          if fakeUser.loggedIn
+            li 
+              a(href="/login") Logout
+          else 
+            li 
+              a(href="/login") Login 
+    main
+      block content
   include partials/footer.pug
